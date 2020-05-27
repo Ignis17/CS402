@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.scarnesdice.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_tv"
+         />
+    <ImageView
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/dice1"
+        android:id="@+id/iv_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_roll"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:text="@string/roll_btn"
+            android:onClick="clickRoll"
+            />
+        <Button
+            android:id="@+id/btn_hold"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:text="@string/hold_btn"
+            />
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_btn"
+            />
+    </LinearLayout>
+</LinearLayout>
